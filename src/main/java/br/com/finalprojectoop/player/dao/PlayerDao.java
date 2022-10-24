@@ -22,4 +22,7 @@ public class PlayerDao {
         return playerRepository.findAll().stream().filter(player -> player.getPlayerName().equals(playerName)).toList();
     }
 
+    public List<Player> getPlayerByTeam(String teamName) {
+        return playerRepository.findAll().stream().filter(player -> player.getIdTeam().getTeamName().equals(teamName)).toList();
+    }
 }

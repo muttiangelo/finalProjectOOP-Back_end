@@ -9,6 +9,7 @@ import javax.persistence.Id;
 
 @Entity
 @Getter
+//TODO: Refactor this class parameters to match the csv data
 public class Team {
 
     @Id

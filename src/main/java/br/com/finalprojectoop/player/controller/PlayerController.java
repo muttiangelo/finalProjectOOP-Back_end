@@ -20,4 +20,14 @@ public class PlayerController {
     public List<Player> getAllPlayers() {
         return playerDao.getAllPlayers();
     }
+
+    @GetMapping("/getByName")
+    public List<Player> getPlayerByName(String playerName) {
+        return playerDao.getPlayerByName(playerName);
+    }
+
+    @GetMapping("/getByTeam")
+    public List<Player> getPlayerByTeam(String teamName) {
+        return playerDao.getPlayerByTeam(teamName);
+    }
 }
