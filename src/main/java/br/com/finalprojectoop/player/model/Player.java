@@ -7,7 +7,6 @@ import javax.persistence.*;
 
 @Entity
 @Getter
-//TODO: Refactor this class parameters to match the csv data
 public class Player {
 
     @Id
@@ -16,15 +15,17 @@ public class Player {
 
     private String playerName;
 
-    private int playerAge;
-
     private String playerPosition;
 
     private int playerGoals;
 
     private int playerAssists;
 
+    private int playerMinutesPlayed;
+
     private int playerYellowCards;
+
+    private int playerRedCards;
 
     @ManyToOne
     private Team idTeam;

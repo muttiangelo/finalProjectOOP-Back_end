@@ -25,4 +25,5 @@ public class PlayerDao {
     public List<Player> getPlayerByTeam(String teamName) {
         return playerRepository.findAll().stream().filter(player -> player.getIdTeam().getTeamName().equals(teamName)).toList();
     }
+
 }

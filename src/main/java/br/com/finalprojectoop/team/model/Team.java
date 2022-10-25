@@ -9,7 +9,6 @@ import javax.persistence.Id;
 
 @Entity
 @Getter
-//TODO: Refactor this class parameters to match the csv data
 public class Team {
 
     @Id
@@ -20,11 +19,7 @@ public class Team {
 
     private int teamPoints;
 
-    private int teamGoals;
-
-    private int teamGoalsAgainst;
-
-    private int teamGoalDifference;
+    private int teamMatchesPlayed;
 
     private int teamWins;
 
@@ -32,17 +27,15 @@ public class Team {
 
     private int teamLosses;
 
-    private int teamMatchesPlayed;
+    private int teamGoalsFor;
 
-    private int teamAverageGoals;
+    private int teamGoalsAgainst;
 
-    private int teamAverageGoalsAgainst;
+    private int teamGoalDifference;
 
-    private int teamMatchesAboveOneGoal;
+    private int teamPointsPerMatch;
 
-    private int teamMatchesAboveTwoGoals;
-
-    private int teamMatchesCleanSheet;
+    private int averageAttendance;
 
     public Team() {
 
